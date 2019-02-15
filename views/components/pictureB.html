@@ -1,0 +1,33 @@
+<div id="pictureB" class="row" ng-controller="pintureBCtl" data-ng-init="initial()">
+        <div class="col-2 p-4">
+            <span class="font-weight-bold">{{title}}</span>
+        </div>
+        <div class="col-10">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row" ng-repeat="(key, value) in listEl">
+                        <div class="col-5">
+                            <div class="form-group row">
+                                <div class="col-6 text-right title-row"><span class="mb-0 font-weight-bold">{{value.title}}</span></div>
+                                <div class="col-6">
+                                    <select id="select" name="select" class="form-control topShadow">
+                                        <option value="0">Not covered</option>
+                                        <option  ng-repeat="(key2, option) in value.listOpt" value="option.key">{{option.value}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="form-group row">
+                                <div class="col-6">
+                                    <input type="text" id="text-input" name="text-input" class="form-control topShadow"
+                                        placeholder="コメント">
+                                </div>
+                                <div class="col-6 title-row"><span class="mb-0 text-gray">{{value.description}}</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

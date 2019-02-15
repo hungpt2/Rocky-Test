@@ -1,0 +1,21 @@
+// Here you can add other styles
+
+.title-row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.topShadow {
+	box-shadow: 0px -2px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow:0px -2px 1px rgba(0,0,0,0.1);
+	-webkit-box-shadow:0px -2px 1px rgba(0,0,0,0.1);
+	-o-box-shadow:0px -2px 1px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 7px;
+}
+
+.text-gray {
+    color: $gray;
+}
